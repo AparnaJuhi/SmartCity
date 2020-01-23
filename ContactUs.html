@@ -1,0 +1,62 @@
+<html>
+<head>
+  <style>
+    #parentdiv
+    {
+      height:100%;
+      width:100%;
+
+
+    }
+
+    #leftdiv
+    {
+      height:100%;
+      width:50%;
+      float:left;
+
+    }
+    *box-sizing:border-box;
+    .rightdiv
+    {
+      background-image: url("message.jpg");
+      background-repeat:no-repeat;
+      height:100%;
+      width:50%;
+      float:right;
+
+
+    }
+  </style>
+</head>
+<body>
+  <h1>Contact Us</h1>
+  <br>
+  <h3>Leave Us a Message</h3>
+<div id="parentdiv">
+  <div id="leftdiv">Left
+  </div>
+  <div class="rightdiv" style="background-image: url('message.jpg');background-repeat: no-repeat;background-size: cover;">
+    First Name<br>
+    <input style="padding:5px;margin-bottom:4px;" type="text" placeholder="Your First Name" id="firstname"><br>
+    Last Name<br>
+    <input style="padding:5px;margin-bottom:10px;" type="text" placeholder="Your last Name" id="lastname"><br>
+    State<br>
+    <select style="padding:5px;margin-bottom:4px;" size="1">
+      <option>Select State</option>
+      <option>Delhi</option>
+      <option>Uttar Pradesh</option>
+      <option>Bihar</option>
+      <option>Maharashtra</option>
+      <option>Odisha</option>
+    </select><br>
+    Subject<br>
+    <textarea style="padding:5px;margin-bottom:4px;" placeholder ="Leave ur text here" name="name" rows="8" cols="80"></textarea>"
+
+
+
+  </div>
+</div>
+
+</body>
+</html>

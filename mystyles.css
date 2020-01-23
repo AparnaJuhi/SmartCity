@@ -1,0 +1,51 @@
+body
+	{
+	 background-image:linear-gradient(rgb(0,0,0,0.5),rgb(0,0,0,0.5)),url("lightbulb.jpg");
+	}
+	.d
+	{
+	 margin-top:40px;
+	 padding:40px;
+	 background-color:white;
+	 width:700px;
+         height:100%;
+	}
+        #textboxid
+        {
+         width:170px;
+         height:24px;
+         border:1px solid #DADCE0;
+         border-radius:4px;
+         font-size:12pt;
+         font-family:verdana;
+         background:#DEDEDC;
+         color:#737373;
+         margin:10px;
+         padding:10px;
+        }
+        #textboxids
+        {
+         width:380px;
+         height:24px;
+         border:1px solid #DADCE0;
+         border-radius:4px;
+         font-size:12pt;
+         font-family:verdana;
+         background:#DEDEDC;
+         color:#737373;
+         margin:10px;
+         padding:10px;
+        }
+        .c
+        {
+          padding:10px;
+          margin:10px;
+          width:150px;
+          height:40px;
+	  font-family:verdana;
+ 	  border:1px solid#DADCE0;
+ 	  border-radius:4px;
+	  color:white;
+          font-size:12pt;
+	  background:#3090C7;
+         }

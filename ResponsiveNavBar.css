@@ -1,0 +1,92 @@
+*
+{
+margin: 0px;
+padding: 0px;
+box-sizing: border-box;     /*Manages the extra wasted width due to margin and padding*/
+}
+.navbar
+{
+  background-color: transparent;
+  display: flex;
+
+}
+.navbar a
+{
+  text-decoration: none;
+  padding: 14px 18px;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-bottom: 1px solid black;
+  text-align: center;
+  transition-delay: 0.6s ease;
+}
+
+.navbar a:hover
+{
+  background-color: white;
+  color: black;
+}
+#chkbx
+{
+  display: none;
+}
+
+.toggle{
+  background-color: #6D6A6A;
+  display: flex;
+  justify-content: flex-end;
+  border-bottom: 2px solid white;
+display: none;    /*Not showing this <div> now
+                    will be shown only when screen is small*/
+
+}
+.toggle label
+{
+  background-color: #D3D3D3;
+  height: 35px;
+  width: 40px;
+  border-radius: 5px;
+  color: black;
+display: flex;
+  margin: 5px;
+  margin-right: 10px;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+
+}
+.toggle label span
+{
+  background-color: black;
+  height :3px;
+  width:80%;
+margin: 3px 0px;
+}
+
+@media screen and (max-width:700px) {
+  .col-3
+  {
+    display:block;
+  }
+.navbar
+{
+  flex-direction: column;
+  display: none;
+}
+
+#chkbx:checked +.navbar
+{
+  display: flex;
+}
+.toggle
+{
+  display: flex;
+
+
+}
+
+
+}

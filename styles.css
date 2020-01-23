@@ -1,0 +1,98 @@
+body{
+  background-image: url("signIn.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+   height: 100%;
+}
+h1{
+  position: sticky;
+  top: 15px;
+  margin-top: 15px;
+  font-size: 60px;
+  color:#f2f2f2;
+   text-shadow:4px 4px 2px red;
+
+}
+
+@keyframes heading {
+  from{left:10px top:10px;}
+  to{left:50px; top:10px;}
+}
+.toggleDiv
+{
+  height: 100%;
+}
+.childdiv
+{
+  border-radius: 5%;
+  margin-top: 40px;
+  border: 1px solid black;
+  opacity: 0.8;
+
+
+  background-image: linear-gradient(to right,#907163,#379683);
+  width:600px;
+
+}
+li{
+  font-family: Lucida Console;
+}
+.m
+{
+
+ margin-top:40px;
+ padding:40px;
+ background-color:white;
+ width:700px;
+       height:100%;
+}
+      .textboxid
+      {
+       width:170px;
+       height:24px;
+       border:1px solid #DADCE0;
+       border-radius:4px;
+       font-size:12pt;
+       font-family:verdana;
+       background:#DEDEDC;
+       color:#737373;
+       margin:10px;
+       padding:10px;
+      }
+      .textboxids
+      {
+       width:380px;
+       height:24px;
+       border:1px solid #DADCE0;
+       border-radius:4px;
+       font-size:12pt;
+       font-family:verdana;
+       background:#DEDEDC;
+       color:#737373;
+       margin:10px;
+       padding:10px;
+      }
+
+
+
+
+.btn
+{
+  padding:10px;
+  margin:10px;
+  width:150px;
+  height:40px;
+font-family:verdana;
+border:1px solid#DADCE0;
+border-radius:4px;
+color:white;
+  font-size:12pt;
+background:#3090C7;
+ }
+
+
+.t
+{
+  font-size: 50px;
+}

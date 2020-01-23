@@ -1,0 +1,66 @@
+  body{
+      color:white;
+      font-size:3vw;
+    }
+    #parent{
+      border-style:border-box;
+      margin-left:3%;
+      margin-right:2%;
+    }
+    #d2{
+      position:absolute;
+      top: 25%;
+    left: 25%;
+    border-style:border-box;
+animation-name:move;
+animation-duration:1s;
+    }
+#d1{animation-name:move;
+animation-duration:1s;}
+@keyframes move{
+0%{
+transform:translateX(1500px);
+}
+100%{
+transform:translateX(0px);
+}
+}
+
+#d4:hover{
+      font-size:2.5vw;
+    }
+    #d3:hover{
+      font-size:2.5vw;
+    }
+    #d5:hover{
+      font-size:2.5vw;
+    }
+ #d6:hover{
+      font-size:2.5vw;
+    }
+
+#d3{
+	animation-name:arrival;
+      animation-duration: 2s;
+    }
+    #d4{
+      animation-name:arrival;
+      animation-duration: 2.5s;
+    }
+    #d5{
+      animation-name:arrival;
+      animation-duration: 3s;
+    }
+#d6{
+      animation-name:arrival;
+      animation-duration: 3.5s;
+    }
+@keyframes arrival {
+  0%{
+    transform:translateX(-800px);
+  }
+  100%{
+    transform:translateX(0px);
+  }
+
+}

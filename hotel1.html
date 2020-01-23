@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Hotel Reservation </title>
+<link rel="stylesheet" type="text/css" href="styles.css">
+<center>
+<body>
+<div class="parentdiv">
+<span ><h1>Create New Account</h1></span>
+<div class="toggleDiv">
+  <center><h1>Hospitality exists when you believe the other person is on your side</h1></center>
+</div>
+<div class="childdiv">
+<form name="myform" action="Signup.php" method="POST">
+<p><span class="x"> Please fill the details below!</span></p>
+
+<input class="textboxid" type="text" name="Name" placeholder="Name" autofocus required>
+<input class="textboxids" type="text" name="Adults" placeholder="Adults">&nbsp;&nbsp;&nbsp;&nbsp;
+<input class="textboxids" type="text" name="Child" placeholder="Child">
+<input class="textboxids" type="text" name="Checkin" placeholder="Check In">&nbsp;&nbsp;&nbsp;&nbsp;
+<input class="textboxids" type="text" name="Checkout" placeholder="Check In">&nbsp;
+<div class="c"><input id="Button" type="Submit" value="Sumbit" class="btn"><br>
+</form>
+</div>
+
+<p><center><span style="color:White;margin-top:20px;font-family:Arial;"> Already have an account?<u> <a href="SignIn.html">Login here.</a> </u></span></center></p>
+</div>
+</div>
+<script>
+
+//                                        USING jQUERY
+  $(document).ready(function(){
+    $(".childdiv").fadeIn(2000);
+    $(".toggleDiv").fadeOut(1500);
+    $("input").on({
+      click:function(){$(this).css("background-color","grey");},  //Works  when input tag is clicked
+      blur:function () {$(this).css("background-color","lightgrey");}  //Works  when cursor is moved out of <input>
+    })
+  });
+</script>
+</body>
+</center>
+</html>

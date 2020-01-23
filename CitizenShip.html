@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Google Docx </title>
+<link rel="stylesheet" type="text/css" href="styles1.css">
+<script type="text/javascript">
+
+function Form_Validate()
+{
+ var a=document.forms["myform"]["FirstName"];
+ var b=document.forms["myform"]["LastName"];
+ var c=document.forms["myform"]["Email"];
+ var d=document.forms["myform"]["Password"];
+ var e=document.forms["myform"]["Adhaar"];
+ var f=document.forms["myform"]["Checkbox"];
+
+ if(a.value=="")
+ {
+  window.alert("Please enter your First Name");
+  a.focus();
+  return false;
+ }
+ if(b.value=="")
+ {
+  window.alert("Please enter your Last Name");
+  b.focus();
+  return false;
+ }
+ if(c.value=="")
+ {
+  window.alert("Please enter your Email");
+  c.focus();
+  return false;
+ }
+ if(c.value.indexOf("@",0)<0)
+ {
+  window.alert("Please enter a valid Email");
+  c.focus();
+  return false;
+ }
+ if(c.value.indexOf(".",0)<0)
+ {
+  window.alert("Please enter a valid Email");
+  c.focus();
+  return false;
+ }
+
+ if(e.value=="")
+ {
+  window.alert("Please Enter 12 Digit Adhaar Number");
+  e.focus();
+  return false;
+ }
+ if(f.value=="")
+ {
+  window.alert("Agree to the Terms&Conditions");
+  f.focus();
+  return false;
+ }
+
+ return true;
+}
+</script>
+</head>
+<center>
+<body>
+<div class="parentdiv">
+<span ><h1>Create New Account</h1></span>
+<div class="toggleDiv">
+  <center><h1>Thank You For Connecting with us!!</h1></center>
+</div>
+<div class="childdiv">
+<form name="myform" action="register.php" method="post">
+<p1><span class="t"><b>Register</b></span></p1>
+<p><span class="x"> Please fill in this form </span></p>
+
+<input class="textboxid" type="text" name="FirstName" placeholder="First Name" autofocus required>
+<input class="textboxid" type="text" name="LastName" placeholder="Last Name"><br>
+<input class="textboxids" type="email" name="Email" placeholder="Email" required><br>
+<input class="textboxids" type="text" name="DOB" placeholder="Date Of Birth"><br>
+<input class="textboxids" type="text" name="Adhaar" placeholder="Aadhaar Number"><br>
+<input type="Checkbox" style="margin-left:15px;margin-top:15px;" name="Checkbox"> I accept the <span style="color:#3090C7;"> Terms of Use </span> & <span style="color:#3090C7;"> Privacy Policy </span><br>
+<div class="c"><input id="Button" type="Submit" value="Sign Up" class="btn"><br>
+</form>
+</div>
+
+<p><center><span style="color:White;margin-top:20px;font-family:Arial;"> Already have an account?<u> <a href="SignIn.html">Login here.</a> </u></span></center></p>
+</div>
+</div>
+<script>
+
+
+
+</script>
+</body>
+</center>
+</html>

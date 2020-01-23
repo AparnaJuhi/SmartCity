@@ -1,0 +1,47 @@
+<html>
+<head>
+  <style>
+    #parentdiv
+    {
+      height:60%;
+border:1px solid black;padding:10px;
+background-color:#EDC7B7;box-sizing:border-box;
+      width:100%;
+    }
+
+    #leftdiv
+    {padding:20px;
+      height:100%;box-sizing:border-box;
+    }    *box-sizing:border-box;
+#rightdiv{
+height:100%;
+}
+#rightdiv,#leftdiv{display:inline;box-sizing:border-box;
+width:50%;height:100%;
+float:left;}
+  </style>
+</head>
+<body>
+  <h1>Contact Us</h1>
+  <br>
+  <h2>Leave Us a Message</h2>
+<div id="parentdiv" border:1px;>
+  <div id="leftdiv">
+<img src="buddha park.jpg" style="height:100%;width:80%;"/>
+  </div>
+  <div id="rightdiv" style="
+background-image:url('message.jpg');background-repeat:no-repeat;background-size:cover;color:white;">
+<form action="contact.php" method="POST">
+    Name<br>
+    <input style="padding:5px;margin-bottom:4px;" type="text" placeholder="Your Name" name="Name"><br>
+    Email<br>
+    <input style="padding:5px;margin-bottom:10px;" type="text" placeholder="Email" name="Email"><br>
+    Subject<br>
+    <textarea style="padding:5px;margin-bottom:4px;" placeholder ="Leave ur text here" name="Message" rows="8" cols="80"></textarea>
+<br>
+<input type="Submit" value="Submit"></form>
+  </div>
+</div>
+
+</body>
+</html>

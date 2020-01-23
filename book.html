@@ -1,0 +1,120 @@
+
+<!-- saved from url=(0043)file:///C:/xampp/htdocs/Smartcity/book.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Booking</title>
+<link rel="stylesheet" type="text/css" href="book.css">
+<script src="file:///C:/xampp/htdocs/Smartcity/dhtmlxcalendar.js"></script>
+<style>
+		#calendar,
+		#calendar2,
+		#calendar3,
+		#calendar4,
+		 	{
+			border: 1px solid #909090;
+			font-family: Tahoma;
+			font-size: 12px;
+			}
+</style>
+</head>
+<body>
+<div id="holder"><a href="https://www.co.in/"><img src="./book_files/90.png" width="200px" height="100px"></a>
+	 <div id="header">
+
+	<ul>
+    	<li><a href="Index.html">Home</a></li>
+    	<li></li>
+
+
+    	</ul>
+    </div>
+</div>
+    <div id="ab">
+    <div id="check">
+    	<br>
+	<form action="index.php" method="post">
+		<div style="position:relative;height:80px;">
+		<label for="in">Check in:</label>
+		            		<input id="calendar" name="In" placeholder="2015-06-02" > <br><br>
+		<label for="in">Check out:</label>
+            		<input id="calendar2" name="Out" placeholder="2015-06-05" > <br><br>
+		</div>
+			Room Type:
+                <select name="room">
+                    <option value="A/C">A/C</option>
+        			<option value="Non-A/C">Non-A/C</option>
+                </select>
+                <select name="type">
+                    <option value="single">Single</option>
+					<option value="double">Double</option>
+                    <option value="three">Three</option>
+                </select>
+		<br><br>
+		<input type="submit" name="submit" value="submit">
+		<input type="reset" name="reset" value="Reset">
+	</form>
+</div>
+   <div id="chat">
+    	<form action="file:///C:/xampp/htdocs/Smartcity/book.html" method="post">
+				<label for="in">Chat</label>
+					<textarea rows="5" cols="25" name="chat" placeholder="message" required="" style="margin-bottom: 10px;"></textarea>
+					<input type="submit" name="submit" value="submit">
+				</form>
+    </div>
+	<br>
+	<br>
+  <br>
+    <div id="fd" style="margin-bottom:20px;">
+				<form action="file:///C:/xampp/htdocs/Smartcity/feedback.php" method="post" style="margin-bottom:10px;">
+				<label for="in">Feedback</label>
+					<textarea rows="5" cols="25" name="feed" placeholder="Type message" required="" style="margin-bottom: 10px;"> </textarea>
+					<input type="submit" name="submit" value="submit">
+				</form>
+	</div>
+	</div>
+<div id="book">
+<h1 style="font-style: italic;color:black">Booking</h1>
+	<div id="a1">
+    <p></p>
+    <form action="hotelbook.php" method="post">
+		 <label for="name">Name:</label>
+    			<input id="name" name="Name" placeholder="Full Name" type="text"><br><br>
+		<label for="email">Email</label>
+    			<input id="email" name="Email" placeholder="Email" required="" type="text"><br><br>
+		<label for="mobile">Mobile No:</label>
+            		<input id="phone" name="Mob" placeholder="Number" required="" type="text"> <br><br>
+		<div style="position:relative;height:80px;">
+		<label for="in">Check in:</label>
+            		<input id="calendar3" name="CheckIn" placeholder="02-08-2019" required="" type="text"> <br><br>
+		<label for="out">Check out:</label>
+            		<input id="calendar4" name="CheckOut" placeholder="05-08-2019" required="" type="text"> <br><br>
+
+		</div>
+		Room Type:
+			<select name="room">
+				<option value="A/C">A/C</option>
+				<option value="Non-A/C">Non-A/C</option>
+			</select>
+			<select name="type">
+				<option value="single">Single</option>
+				<option value="double">Double</option>
+				<option value="three">Three</option>
+			</select>
+		<br><br><br><button><a href="payment.html">Book</a></button>
+<input type="reset" name="reset" value="Reset">
+</form>
+    </div>
+</div>
+<div id="rest">
+    	<h1 style="font-style: italic;color: lightblue">Special Dishes</h1>
+        	<div id="a3">
+            </div>
+            <div id="b3">
+            </div>
+            <div id="c3">
+            </div>
+	</div>
+
+
+
+</body></html>
