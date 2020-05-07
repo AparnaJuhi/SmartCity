@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+#topnav{
+overflow:hidden;
+background-color: #9933cc;
+ color: #ffffff;}
+
+#topnav a{
+color: #ffffff;
+float:left;
+display:block;
+text-align:center;
+font-size:17px;
+}
+
+#topnav a:hover {
+  background-color:#ddd;
+  color: black;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+[class*="coli-"] {
+  float: left;
+  padding: 5px;
+}
+[class*="column-"] {
+  float: left;
+}
+
+html {
+  font-family: "Lucida Sans", sans-serif;
+}
+
+
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  padding: 8px;
+  margin-bottom: 7px;
+  background-color: #33b5e5;
+  color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.menu li:hover {
+  background-color: #0099cc;
+}
+
+.aside {
+  background-color: #33b5e5;
+  padding: 15px;
+  color: #ffffff;
+  text-align: center;
+  font-size: 14px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
+
+
+/* Slide show********************************************* */
+.mySlides {display: none;  height:400px; width:100%; }
+.slideshow-container img {vertical-align: middle;  height:400px; width:100%;}
+
+/* Slideshow container */
+.slideshow-container {
+  height:auto;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 4px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+/*          ******************************************** */
+
+#footer {
+  background-color: #0099cc;
+  color: #ffffff;
+  text-align: center;
+  font-size: 10px;
+  padding:5px;height:180px;
+}
+
+#footer img {float:left;
+border-radius:50%; margin-left:10px;height:100px;  width:100px; }
+
+</style>
+</head>
+<body>
+
+<div id="topnav" class="col-12 coli-s-12">
+  <a href="#home" class="col-3 col-s-3" style="text-decoration:none;">Home</a>
+     <a href="history.html"  class="col-3 col-s-6" style=" text-decoration:none;">About</a>
+       <a href="Contactusmodified.html" class="col-3 col-s-9" style="text-decoration:none;">Contact Us</a>
+  <a href="Create_Account.html" class="col-3 col-s-12" style="text-decoration:none;">Sign Up</a>  
+</div>
+
+
+<div class="row">
+  <div class="col-3 col-s-3 menu">
+    <ul>
+      <li><a href="travel smart city.html" style="text-decoration:none;color:#FFFFFF;">Business</a></li>
+      <li><a href="map modified.html" style="text-decoration:none; color:#FFFFFF;">City Tour</a></li>
+      <li><a href="Citizenship.html" style="text-decoration:none; color:#FFFFFF;">Citizenship</a></li>
+      <li><a href="book.html" style="text-decoration:none; color:#FFFFFF;">Boarding and Lodging</a></li>
+ <li><a href="#" style="text-decoration:none;color:#FFFFFF;">Health</a></li>
+ <li><a href="#" style="text-decoration:none;color:#FFFFFF;">Education</a></li>
+ <li><a href="#" style="text-decoration:none;color:#FFFFFF;">Law and Order</a></li>
+    </ul>
+  </div>
+
+  <div class="col-6 col-s-9">
+    <h1> Smart City</h1>
+    <h3> Nurturing Tomorrow </h3>
+    <p>An initiative by government that uses information and communication technologies (ICT) to increase operational efficiency, share information with the public and improve both the quality of government services and citizen welfare.</p>
+<div class="slideshow-container">
+<div class="mySlides fade">
+  <img src="smcity2.jpg"  style="max-width:100%; max-height:100%;" >
+</div>
+<div class="mySlides fade">
+  <img src="smcity3.jpg"  style="max-width:100%; max-height:100%;" >
+</div>
+<div class="mySlides fade">
+  <img src="smcity1.jpg"   style="max-width:100%; max-height:100%;" >
+</div>
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+
+
+   
+ </div>
+ 
+  <div class="col-3 col-s-12">
+    <div class="aside">
+     <h1> What's New </h1>
+	<marquee direction="up" onmouseover="this.stop();" onmouseout="this.start();"><a href="jio.html" style="color:white;">Reliance Jio has also announced a Welcome Offer for the new Jio Fiber customers</a>
+</br></br><a href="chandrayaan.html" style="color:white;">Chandrayaan 2: India's second mission to the moon</a>
+</br></br><a href="news1.html" style="color:white;"> Next Samsung foldable phone will fold into a square, may be cheaper than Galaxy Fold</a>
+	</marquee>
+    </div>
+  </div>
+</div>
+
+<div id="footer">
+<h2> About Developer</h2>
+<div  class="col-1 column-s-1">
+  <img src="pic.jpg"  style="max-width:100%; max-height:100%;" ></div>
+<div  class="col-2 column-s-2" style=" margin:10px;">
+<B style="font-size:15px;"> APARNA JUHI</div>
+</div>
+</div>
+
+</body>
+</html>
